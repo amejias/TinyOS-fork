@@ -195,7 +195,7 @@ implementation {
     call ResourceConfigure.configure[resId]();
     signal Resource.granted[resId]();
   }
-  
+
   //Default event/command handlers for all of the other
     //potential users/providers of the parameterized interfaces 
     //that have not been connected to.  
