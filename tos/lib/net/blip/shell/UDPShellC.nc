@@ -36,7 +36,7 @@ configuration UDPShellC {
   components ICMPPingC;
   UDPShellP.ICMPPing -> ICMPPingC.ICMPPing[unique("PING")];
 
-#if defined(PLATFORM_TELOSB) || defined(PLATFORM_EPIC)
+#if defined(PLATFORM_TELOSB) || defined(PLATFORM_EPIC) || defined(PLATFORM_Z1)
   components CounterMilli32C;
   UDPShellP.Uptime -> CounterMilli32C;
 #endif

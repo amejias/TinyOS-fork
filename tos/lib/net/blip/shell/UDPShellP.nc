@@ -36,7 +36,7 @@ module UDPShellP {
     interface Leds;
     
     interface ICMPPing;
-#if defined(PLATFORM_TELOSB) || defined(PLATFORM_EPIC)
+#if defined(PLATFORM_TELOSB) || defined(PLATFORM_EPIC) || defined(PLATFORM_Z1)
     interface Counter<TMilli, uint32_t> as Uptime;
 #endif
 
